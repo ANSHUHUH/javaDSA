@@ -1,0 +1,28 @@
+package javaDSA;
+
+public class DSApractical3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String s = "annan";
+int left = 0;
+int right = s.length()-1;
+boolean ispalindrome = true;
+
+while(left<=right) {
+	if(s.charAt(left) != s.charAt(right)) {
+		ispalindrome = false;
+		break;
+	}else
+	left++;
+	right--;
+}
+if(ispalindrome) {
+	System.out.println("string is palindrome");
+}else {
+	System.out.println("string is not palindrome");
+}
+
+	}
+
+}

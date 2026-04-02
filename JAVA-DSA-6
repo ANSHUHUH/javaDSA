@@ -1,1 +1,21 @@
-NOT WRITTEN YET
+package javaDSA;
+import java.util.Scanner;
+
+public class DSApractice6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+int[] arr = new int[3];
+for(int i = 0;i<3;i++) {
+	System.out.println("enter angle no "+ i+1 +" : ");
+	arr[i] = sc.nextInt();
+}
+if(arr[0] + arr[1] + arr[2] == 180) {
+    System.out.println("yes this angles can be triangle ");
+}else {
+	System.out.println("these angles can't be triangle");
+}
+	}
+
+}
